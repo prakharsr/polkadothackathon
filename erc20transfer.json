@@ -1,0 +1,193 @@
+{
+  "registry": {
+    "strings": [
+      "storage",
+      "Storage",
+      "new",
+      "allowance",
+      "u256",
+      "owner",
+      "address",
+      "spender",
+      "approve",
+      "bool",
+      "amount",
+      "transferFrom",
+      "sender",
+      "recipient",
+      "erc20transfer"
+    ],
+    "types": [
+      {
+        "id": {
+          "custom.name": 1,
+          "custom.namespace": [],
+          "custom.params": []
+        },
+        "def": {
+          "struct.fields": []
+        }
+      },
+      {
+        "id": "u256",
+        "def": "builtin"
+      },
+      {
+        "id": "address",
+        "def": "builtin"
+      },
+      {
+        "id": "bool",
+        "def": "builtin"
+      }
+    ]
+  },
+  "storage": {
+    "struct.type": 1,
+    "struct.fields": [
+      {
+        "name": 2,
+        "layout": {
+          "struct.type": 1,
+          "struct.fields": []
+        }
+      }
+    ]
+  },
+  "contract": {
+    "name": 15,
+    "constructors": [
+      {
+        "name": 3,
+        "selector": "[\"0x86\",\"0x17\",\"0x31\",\"0xD5\"]",
+        "docs": [
+          ""
+        ],
+        "args": []
+      }
+    ],
+    "messages": [
+      {
+        "name": 4,
+        "selector": "[\"0xDD\",\"0x62\",\"0xED\",\"0x3E\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": false,
+        "args": [
+          {
+            "name": 6,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                7
+              ]
+            }
+          },
+          {
+            "name": 8,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                7
+              ]
+            }
+          }
+        ],
+        "return_type": {
+          "ty": 2,
+          "display_name": [
+            5
+          ]
+        }
+      },
+      {
+        "name": 9,
+        "selector": "[\"0xE1\",\"0xF2\",\"0x1C\",\"0x67\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": true,
+        "args": [
+          {
+            "name": 6,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                7
+              ]
+            }
+          },
+          {
+            "name": 8,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                7
+              ]
+            }
+          },
+          {
+            "name": 11,
+            "type": {
+              "ty": 2,
+              "display_name": [
+                5
+              ]
+            }
+          }
+        ],
+        "return_type": {
+          "ty": 4,
+          "display_name": [
+            10
+          ]
+        }
+      },
+      {
+        "name": 12,
+        "selector": "[\"0x23\",\"0xB8\",\"0x72\",\"0xDD\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": true,
+        "args": [
+          {
+            "name": 13,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                7
+              ]
+            }
+          },
+          {
+            "name": 14,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                7
+              ]
+            }
+          },
+          {
+            "name": 11,
+            "type": {
+              "ty": 2,
+              "display_name": [
+                5
+              ]
+            }
+          }
+        ],
+        "return_type": {
+          "ty": 4,
+          "display_name": [
+            10
+          ]
+        }
+      }
+    ],
+    "events": []
+  }
+}
