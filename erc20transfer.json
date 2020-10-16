@@ -60,9 +60,7 @@
       {
         "name": 3,
         "selector": "[\"0x86\",\"0x17\",\"0x31\",\"0xD5\"]",
-        "docs": [
-          ""
-        ],
+        "docs": [],
         "args": []
       }
     ],
@@ -70,9 +68,7 @@
       {
         "name": 4,
         "selector": "[\"0xDD\",\"0x62\",\"0xED\",\"0x3E\"]",
-        "docs": [
-          ""
-        ],
+        "docs": [],
         "mutates": false,
         "args": [
           {
@@ -104,9 +100,7 @@
       {
         "name": 9,
         "selector": "[\"0xE1\",\"0xF2\",\"0x1C\",\"0x67\"]",
-        "docs": [
-          ""
-        ],
+        "docs": [],
         "mutates": true,
         "args": [
           {
@@ -147,9 +141,7 @@
       {
         "name": 12,
         "selector": "[\"0x23\",\"0xB8\",\"0x72\",\"0xDD\"]",
-        "docs": [
-          ""
-        ],
+        "docs": [],
         "mutates": true,
         "args": [
           {
@@ -187,7 +179,6 @@
           ]
         }
       }
-    ],
-    "events": []
+    ]
   }
 }

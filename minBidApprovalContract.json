@@ -1,0 +1,232 @@
+{
+  "registry": {
+    "strings": [
+      "storage",
+      "beneficiary",
+      "address",
+      "votingStartTime",
+      "u128",
+      "votingEndTime",
+      "approvalEndTime",
+      "isApproved",
+      "bool",
+      "maxBid",
+      "maxBidder",
+      "minApproval",
+      "Storage",
+      "new",
+      "_startTime",
+      "_endTime",
+      "_approvalEndTime",
+      "_minApproval",
+      "_beneficiary",
+      "bid",
+      "approval",
+      "withdraw",
+      "minBidApprovalContract"
+    ],
+    "types": [
+      {
+        "id": {
+          "custom.name": 1,
+          "custom.namespace": [],
+          "custom.params": []
+        },
+        "def": {
+          "struct.fields": []
+        }
+      },
+      {
+        "id": "address",
+        "def": "builtin"
+      },
+      {
+        "id": "u128",
+        "def": "builtin"
+      },
+      {
+        "id": "bool",
+        "def": "builtin"
+      }
+    ]
+  },
+  "storage": {
+    "struct.type": 1,
+    "struct.fields": [
+      {
+        "name": 13,
+        "layout": {
+          "struct.type": 1,
+          "struct.fields": [
+            {
+              "name": 2,
+              "layout": {
+                "range.offset": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "range.len": "1",
+                "range.elem_type": 2
+              }
+            },
+            {
+              "name": 4,
+              "layout": {
+                "range.offset": "0x0000000000000000000000000000000000000000000000000000000000000002",
+                "range.len": "1",
+                "range.elem_type": 3
+              }
+            },
+            {
+              "name": 6,
+              "layout": {
+                "range.offset": "0x0000000000000000000000000000000000000000000000000000000000000003",
+                "range.len": "1",
+                "range.elem_type": 3
+              }
+            },
+            {
+              "name": 7,
+              "layout": {
+                "range.offset": "0x0000000000000000000000000000000000000000000000000000000000000004",
+                "range.len": "1",
+                "range.elem_type": 3
+              }
+            },
+            {
+              "name": 8,
+              "layout": {
+                "range.offset": "0x0000000000000000000000000000000000000000000000000000000000000005",
+                "range.len": "1",
+                "range.elem_type": 4
+              }
+            },
+            {
+              "name": 10,
+              "layout": {
+                "range.offset": "0x0000000000000000000000000000000000000000000000000000000000000006",
+                "range.len": "1",
+                "range.elem_type": 3
+              }
+            },
+            {
+              "name": 11,
+              "layout": {
+                "range.offset": "0x0000000000000000000000000000000000000000000000000000000000000007",
+                "range.len": "1",
+                "range.elem_type": 2
+              }
+            },
+            {
+              "name": 12,
+              "layout": {
+                "range.offset": "0x0000000000000000000000000000000000000000000000000000000000000008",
+                "range.len": "1",
+                "range.elem_type": 3
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "contract": {
+    "name": 23,
+    "constructors": [
+      {
+        "name": 14,
+        "selector": "[\"0xDC\",\"0xE1\",\"0x94\",\"0xBE\"]",
+        "docs": [
+          ""
+        ],
+        "args": [
+          {
+            "name": 15,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                5
+              ]
+            }
+          },
+          {
+            "name": 16,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                5
+              ]
+            }
+          },
+          {
+            "name": 17,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                5
+              ]
+            }
+          },
+          {
+            "name": 18,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                5
+              ]
+            }
+          },
+          {
+            "name": 19,
+            "type": {
+              "ty": 2,
+              "display_name": [
+                3
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "name": 20,
+        "selector": "[\"0x19\",\"0x98\",\"0xAE\",\"0xEF\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": false,
+        "args": [],
+        "return_type": null
+      },
+      {
+        "name": 21,
+        "selector": "[\"0x39\",\"0x78\",\"0x8B\",\"0xC8\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": true,
+        "args": [],
+        "return_type": {
+          "ty": 4,
+          "display_name": [
+            9
+          ]
+        }
+      },
+      {
+        "name": 22,
+        "selector": "[\"0x3C\",\"0xCF\",\"0xD6\",\"0x0B\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": true,
+        "args": [],
+        "return_type": {
+          "ty": 4,
+          "display_name": [
+            9
+          ]
+        }
+      }
+    ],
+    "events": []
+  }
+}
