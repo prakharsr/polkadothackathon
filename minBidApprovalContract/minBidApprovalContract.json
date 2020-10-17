@@ -22,11 +22,11 @@
       "_approvalEndTime",
       "_minApproval",
       "_beneficiary",
-      "withdraw",
-      "timeUntilApprovalPeriodEnds",
-      "approval",
       "timeUntilAuctionEnds",
+      "approval",
+      "timeUntilApprovalPeriodEnds",
       "bid",
+      "withdraw",
       "maxBidRaised",
       "bidder",
       "amount",
@@ -213,51 +213,6 @@
     "messages": [
       {
         "name": 22,
-        "selector": "[\"0x3C\",\"0xCF\",\"0xD6\",\"0x0B\"]",
-        "docs": [
-          ""
-        ],
-        "mutates": true,
-        "args": [],
-        "return_type": {
-          "ty": 4,
-          "display_name": [
-            9
-          ]
-        }
-      },
-      {
-        "name": 23,
-        "selector": "[\"0x63\",\"0x68\",\"0x95\",\"0xFD\"]",
-        "docs": [
-          ""
-        ],
-        "mutates": false,
-        "args": [],
-        "return_type": {
-          "ty": 3,
-          "display_name": [
-            5
-          ]
-        }
-      },
-      {
-        "name": 24,
-        "selector": "[\"0x39\",\"0x78\",\"0x8B\",\"0xC8\"]",
-        "docs": [
-          ""
-        ],
-        "mutates": true,
-        "args": [],
-        "return_type": {
-          "ty": 4,
-          "display_name": [
-            9
-          ]
-        }
-      },
-      {
-        "name": 25,
         "selector": "[\"0xC8\",\"0x50\",\"0xD2\",\"0xF8\"]",
         "docs": [
           ""
@@ -272,7 +227,37 @@
         }
       },
       {
-        "name": 26,
+        "name": 23,
+        "selector": "[\"0x39\",\"0x78\",\"0x8B\",\"0xC8\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": true,
+        "args": [],
+        "return_type": {
+          "ty": 4,
+          "display_name": [
+            9
+          ]
+        }
+      },
+      {
+        "name": 24,
+        "selector": "[\"0x63\",\"0x68\",\"0x95\",\"0xFD\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": false,
+        "args": [],
+        "return_type": {
+          "ty": 3,
+          "display_name": [
+            5
+          ]
+        }
+      },
+      {
+        "name": 25,
         "selector": "[\"0x19\",\"0x98\",\"0xAE\",\"0xEF\"]",
         "docs": [
           ""
@@ -280,6 +265,21 @@
         "mutates": false,
         "args": [],
         "return_type": null
+      },
+      {
+        "name": 26,
+        "selector": "[\"0x3C\",\"0xCF\",\"0xD6\",\"0x0B\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": true,
+        "args": [],
+        "return_type": {
+          "ty": 4,
+          "display_name": [
+            9
+          ]
+        }
       }
     ],
     "events": [
