@@ -4,15 +4,17 @@
       "storage",
       "beneficiary",
       "address",
-      "votingStartTime",
-      "u128",
-      "votingEndTime",
+      "auctionStartTime",
+      "u256",
+      "auctionEndTime",
       "approvalEndTime",
       "isApproved",
       "bool",
       "maxBid",
       "maxBidder",
       "minApproval",
+      "getTime",
+      "owner",
       "Storage",
       "new",
       "_startTime",
@@ -20,9 +22,16 @@
       "_approvalEndTime",
       "_minApproval",
       "_beneficiary",
-      "bid",
-      "approval",
       "withdraw",
+      "timeUntilApprovalPeriodEnds",
+      "approval",
+      "timeUntilAuctionEnds",
+      "bid",
+      "maxBidRaised",
+      "bidder",
+      "amount",
+      "maxBidApproved",
+      "winner",
       "minBidApprovalContract"
     ],
     "types": [
@@ -41,7 +50,7 @@
         "def": "builtin"
       },
       {
-        "id": "u128",
+        "id": "u256",
         "def": "builtin"
       },
       {
@@ -54,7 +63,7 @@
     "struct.type": 1,
     "struct.fields": [
       {
-        "name": 13,
+        "name": 15,
         "layout": {
           "struct.type": 1,
           "struct.fields": [
@@ -121,6 +130,22 @@
                 "range.len": "1",
                 "range.elem_type": 3
               }
+            },
+            {
+              "name": 13,
+              "layout": {
+                "range.offset": "0x0000000000000000000000000000000000000000000000000000000000000009",
+                "range.len": "1",
+                "range.elem_type": 3
+              }
+            },
+            {
+              "name": 14,
+              "layout": {
+                "range.offset": "0x000000000000000000000000000000000000000000000000000000000000000A",
+                "range.len": "1",
+                "range.elem_type": 2
+              }
             }
           ]
         }
@@ -128,33 +153,15 @@
     ]
   },
   "contract": {
-    "name": 23,
+    "name": 32,
     "constructors": [
       {
-        "name": 14,
-        "selector": "[\"0xDC\",\"0xE1\",\"0x94\",\"0xBE\"]",
+        "name": 16,
+        "selector": "[\"0x18\",\"0x74\",\"0x4B\",\"0xE4\"]",
         "docs": [
           ""
         ],
         "args": [
-          {
-            "name": 15,
-            "type": {
-              "ty": 3,
-              "display_name": [
-                5
-              ]
-            }
-          },
-          {
-            "name": 16,
-            "type": {
-              "ty": 3,
-              "display_name": [
-                5
-              ]
-            }
-          },
           {
             "name": 17,
             "type": {
@@ -176,6 +183,24 @@
           {
             "name": 19,
             "type": {
+              "ty": 3,
+              "display_name": [
+                5
+              ]
+            }
+          },
+          {
+            "name": 20,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                5
+              ]
+            }
+          },
+          {
+            "name": 21,
+            "type": {
               "ty": 2,
               "display_name": [
                 3
@@ -186,31 +211,6 @@
       }
     ],
     "messages": [
-      {
-        "name": 20,
-        "selector": "[\"0x19\",\"0x98\",\"0xAE\",\"0xEF\"]",
-        "docs": [
-          ""
-        ],
-        "mutates": false,
-        "args": [],
-        "return_type": null
-      },
-      {
-        "name": 21,
-        "selector": "[\"0x39\",\"0x78\",\"0x8B\",\"0xC8\"]",
-        "docs": [
-          ""
-        ],
-        "mutates": true,
-        "args": [],
-        "return_type": {
-          "ty": 4,
-          "display_name": [
-            9
-          ]
-        }
-      },
       {
         "name": 22,
         "selector": "[\"0x3C\",\"0xCF\",\"0xD6\",\"0x0B\"]",
@@ -225,8 +225,120 @@
             9
           ]
         }
+      },
+      {
+        "name": 23,
+        "selector": "[\"0x63\",\"0x68\",\"0x95\",\"0xFD\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": false,
+        "args": [],
+        "return_type": {
+          "ty": 3,
+          "display_name": [
+            5
+          ]
+        }
+      },
+      {
+        "name": 24,
+        "selector": "[\"0x39\",\"0x78\",\"0x8B\",\"0xC8\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": true,
+        "args": [],
+        "return_type": {
+          "ty": 4,
+          "display_name": [
+            9
+          ]
+        }
+      },
+      {
+        "name": 25,
+        "selector": "[\"0xC8\",\"0x50\",\"0xD2\",\"0xF8\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": false,
+        "args": [],
+        "return_type": {
+          "ty": 3,
+          "display_name": [
+            5
+          ]
+        }
+      },
+      {
+        "name": 26,
+        "selector": "[\"0x19\",\"0x98\",\"0xAE\",\"0xEF\"]",
+        "docs": [
+          ""
+        ],
+        "mutates": false,
+        "args": [],
+        "return_type": null
       }
     ],
-    "events": []
+    "events": [
+      {
+        "docs": [
+          ""
+        ],
+        "name": 27,
+        "args": [
+          {
+            "name": 28,
+            "type": {
+              "ty": 2,
+              "display_name": [
+                3
+              ]
+            },
+            "indexed": false
+          },
+          {
+            "name": 29,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                5
+              ]
+            },
+            "indexed": false
+          }
+        ]
+      },
+      {
+        "docs": [
+          ""
+        ],
+        "name": 30,
+        "args": [
+          {
+            "name": 31,
+            "type": {
+              "ty": 2,
+              "display_name": [
+                3
+              ]
+            },
+            "indexed": false
+          },
+          {
+            "name": 29,
+            "type": {
+              "ty": 3,
+              "display_name": [
+                5
+              ]
+            },
+            "indexed": false
+          }
+        ]
+      }
+    ]
   }
 }
