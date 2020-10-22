@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.4.22 <0.8.0;
 
+// An auction smart contract that starts an auction after some period of time, we can set the time when the auction ends also. Has an approval phase after auction ends, where the auctioneer approves if he accepts and approves the highest bid. Also, has a minimum bid amount.
+
 contract minBidApprovalContract {
     address payable public beneficiary;
     mapping (address => uint) amountPayable;
@@ -18,9 +20,9 @@ contract minBidApprovalContract {
         beneficiary = _beneficiary;
         owner = msg.sender;
         getTime = block.timestamp;
-        auctionStartTime = _startTime + getTime;
-        auctionEndTime = _endTime + getTime;
-        approvalEndTime = _approvalEndTime + getTime;
+        auctionStartTime = _startTime*1000 + getTime;
+        auctionEndTime = _endTime*1000 + getTime;
+        approvalEndTime = _approvalEndTime*1000 + getTime;
         minApproval = _minApproval;
         isApproved = false;
     }
@@ -51,7 +53,7 @@ contract minBidApprovalContract {
     event maxBidApproved(address winner, uint amount);
     
     function timeUntilAuctionEnds() public view duringauction(block.timestamp) returns (uint) {
-        return auctionEndTime - block.timestamp;
+	    return auctionEndTime - block.timestamp;
     }
     
     function timeUntilApprovalPeriodEnds() public view approvalWait(block.timestamp) returns (uint) {

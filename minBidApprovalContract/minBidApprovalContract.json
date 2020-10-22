@@ -3,7 +3,7 @@
     "strings": [
       "storage",
       "beneficiary",
-      "address",
+      "AccountId",
       "auctionStartTime",
       "u256",
       "auctionEndTime",
@@ -46,7 +46,7 @@
         }
       },
       {
-        "id": "address",
+        "id": "AccountId",
         "def": "builtin"
       },
       {
