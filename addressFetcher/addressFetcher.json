@@ -1,0 +1,139 @@
+{
+  "contract": {
+    "authors": [
+      "unknown"
+    ],
+    "name": "addressFetcher",
+    "version": "0.0.1"
+  },
+  "metadataVersion": "0.1.0",
+  "source": {
+    "compiler": "solang 0.1.5",
+    "hash": "0x5145a9e9fd4c0ec52aa0bfa5101086b60f54e527a40b2d84b97efdeadcb2a706",
+    "language": "Solidity 0.1.5"
+  },
+  "spec": {
+    "constructors": [
+      {
+        "args": [
+          {
+            "name": "_time",
+            "type": {
+              "display_name": [
+                "u256"
+              ],
+              "type": 4
+            }
+          }
+        ],
+        "docs": [
+          ""
+        ],
+        "name": "new",
+        "selector": "0x6d9b6a6b"
+      }
+    ],
+    "events": [],
+    "messages": [
+      {
+        "args": [],
+        "docs": [
+          ""
+        ],
+        "mutates": false,
+        "name": "getAddresses",
+        "payable": false,
+        "return_type": {
+          "display_name": [],
+          "type": 5
+        },
+        "selector": "0xa39fac12"
+      }
+    ]
+  },
+  "storage": {
+    "struct": {
+      "fields": [
+        {
+          "layout": {
+            "cell": {
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "ty": 3
+            }
+          },
+          "name": "ownerAddress"
+        },
+        {
+          "layout": {
+            "cell": {
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "ty": 3
+            }
+          },
+          "name": "smartContractAddress"
+        },
+        {
+          "layout": {
+            "cell": {
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000002",
+              "ty": 4
+            }
+          },
+          "name": "deployedTime"
+        }
+      ]
+    }
+  },
+  "types": [
+    {
+      "def": {
+        "primitive": "u8"
+      }
+    },
+    {
+      "def": {
+        "array": {
+          "len": 32,
+          "type": 1
+        }
+      }
+    },
+    {
+      "def": {
+        "composite": {
+          "fields": [
+            {
+              "type": 2
+            }
+          ]
+        }
+      },
+      "path": [
+        "AccountId"
+      ]
+    },
+    {
+      "def": {
+        "primitive": "u256"
+      }
+    },
+    {
+      "def": {
+        "composite": {
+          "fields": [
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            }
+          ]
+        }
+      },
+      "path": []
+    }
+  ]
+}
